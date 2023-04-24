@@ -3,15 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Vite Vanila App</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Vite Vanila App | Transition barba</title>
 </head>
 
-<body>
-  <button id="button">create text</button>
-  <p id="sometext"></p>
+<body data-barba="wrapper">
+  <!-- Transition -->
+  <div class="loader">
+    <div class="page-transition"></div>
+  </div>
+  <!-- Main content -->
+  <main data-barba="container" data-barba-namespace="home" class="main-container">
+    <h1 class="title">Home</h1>
+    <a href="/about.html">About</a>
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 
